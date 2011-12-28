@@ -1,0 +1,7 @@
+twitter-bootstrap (1.4+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #647864).
+  * Rebuild upstream tarball without browser and twitter icons
+    and google-code-prettify.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Wed, 28 Dec 2011 08:10:28 +0100
