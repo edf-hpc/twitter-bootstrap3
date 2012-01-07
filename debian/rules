@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+SHELL := sh -e
+
 %:
 	dh ${@}
 
@@ -12,7 +14,21 @@ dfsg:
 override_dh_auto_clean:
 	dh_auto_clean
 
+	# remove upstreams bootstrap.css and bootstrap.min.css
 	rm -f *.css
+
+	# remove our compressed files
+	rm -f js/*.min.js
+	rm -f debian/local/*/*.min.js
+
+override_dh_auto_build:
+	dh_auto_build
+
+	# compress our files
+	for _FILE in js/*.js debian/local/*/*.js; \
+	do \
+		yui-compressor --type js -o $$(dirname $${_FILE})/$$(basename $${_FILE} .js).min.js $${_FILE}; \
+	done
 
 override_dh_builddeb:
 	dh_builddeb -- -Zgzip -z9

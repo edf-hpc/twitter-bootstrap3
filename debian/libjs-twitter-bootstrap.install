@@ -1,2 +1,5 @@
-*.css	/usr/share/javascript/twitter-bootstrap
-js/*.js	/usr/share/javascript/twitter-bootstrap
+*.css			/usr/share/javascript/twitter-bootstrap
+js/*.js			/usr/share/javascript/twitter-bootstrap
+
+debian/local/*/*.js	/usr/share/javascript/twitter-bootstrap
+debian/local/*/*.css	/usr/share/javascript/twitter-bootstrap

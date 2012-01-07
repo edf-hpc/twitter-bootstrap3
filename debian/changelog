@@ -1,3 +1,14 @@
+twitter-bootstrap (1.4+dfsg-2) unstable; urgency=low
+
+  * Adding provides twitter-bootstrap and twitter-bootstrap-docs to
+    libjs-t-b and libjs-t-b-d respectively.
+  * Adding local copy of html5shiv, version 20120101.
+  * Adding local copy of google-code-prettify, version 20110601.
+  * Installing compressed variants of all javascript files.
+  * Adding recommends to libjs-jquery and libjs-jquery-tablesorter.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 07 Jan 2012 23:06:55 +0100
+
 twitter-bootstrap (1.4+dfsg-1) unstable; urgency=low
 
   * Initial release (Closes: #647864).

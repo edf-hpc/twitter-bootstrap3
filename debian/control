@@ -2,7 +2,7 @@ Source: twitter-bootstrap
 Section: web
 Priority: optional
 Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
-Build-Depends: debhelper (>= 8), node-less
+Build-Depends: debhelper (>= 8), node-less, yui-compressor
 Standards-Version: 3.9.2
 Homepage: http://twitter.github.com/bootstrap/
 
@@ -10,8 +10,9 @@ Package: libjs-twitter-bootstrap
 Section: web
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: javascript-common
+Recommends: javascript-common, libjs-jquery, libjs-jquery-tablesorter
 Suggests: libjs-twitter-bootstrap-docs
+Provides: twitter-bootstrap
 Description: html, CSS and JS toolkit from Twitter
  Bootstrap is a toolkit from Twitter designed to kickstart development of
  webapps and sites with modern browsers in mind.
@@ -24,6 +25,7 @@ Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Enhances: libjs-twitter-bootstrap
+Provides: twitter-bootstrap-docs
 Description: html, CSS and JS toolkit from Twitter (documentation)
  Bootstrap is a toolkit from Twitter designed to kickstart development of
  webapps and sites with modern browsers in mind.

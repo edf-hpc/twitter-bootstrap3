@@ -410,6 +410,21 @@ License: CC-BY-3.0
       to restrict the license of any rights under applicable
       law.
 
+Files: debian/local/html5shiv/*
+Copyright:
+ (C) 2011 Alexander Farkas <info@corrupt-system.de>
+ (C) 2011 Jonathan Neal <jonathantneal@hotmail.com>
+License: MIT | GPL-2
+
+Files: debian/local/prettify/*
+Copyright:
+ (C) 2006-2011 Google Inc.
+ (C) 2011 Martin S.
+ (C) 2009 Onno Hommes
+ (C) 2011 Patrick Wied
+ (C) 2011 Zimin A.V.
+License: Apache-2.0
+
 License: MIT
  Permission is hereby granted, free of charge, to any person obtaining
  a copy of this software and associated documentation files (the
