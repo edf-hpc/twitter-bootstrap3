@@ -1,3 +1,24 @@
+twitter-bootstrap (2.0+dfsg-1) unstable; urgency=low
+
+  * Merging upstream version 2.0+dfsg.
+  * Updating rules for version 2.0.
+  * Updating copyright file for version 2.0.
+  * Removing date.patch, not required anymore.
+  * Updating local copy of html5shiv.
+  * Adding node-uglify to build-depends.
+  * Adding zip to build-depends.
+  * Adding patch to avoid trying to copy not included jquery.js file.
+  * Adding patch to avoid removing files after build.
+  * Updating debhelper files for new fs layout.
+  * Using uppercase spelling of html in package descriptions.
+  * Adding todo file.
+  * Dropping usage of javascript-common and using more suitable
+    /twitter-bootstrap and /bootstrap configurations without loosing
+    javascript-common compatiblity.
+  * Also compressing local css file.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 11 Feb 2012 09:40:17 +0100
+
 twitter-bootstrap (1.4+dfsg-2) unstable; urgency=low
 
   * Adding provides twitter-bootstrap and twitter-bootstrap-docs to

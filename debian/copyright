@@ -1,9 +1,13 @@
 Files: *
-Copyright: (C) 2011 Twitter, Inc.
+Copyright: (C) 2011-2012 Twitter, Inc.
 License: Apache-2.0
 
-Files: docs/*, examples/*
-Copyright: (C) 2011 Twitter, Inc.
+Files: docs/*
+Copyright: (C) 2011-2012 Twitter, Inc.
+License: CC-BY-3.0
+
+Files: img/*
+Copyright: (C) 2010-2012 Jan Kovarik <glyphicons@gmail.com>
 License: CC-BY-3.0
 
 Files: js/tests/vendor/qunit.*
@@ -13,7 +17,7 @@ Copyright:
 License: MIT | GPL-2
 
 Files: debian/*
-Copyright: (C) 2011 Daniel Baumann <daniel.baumann@progress-technologies.net>
+Copyright: (C) 2011-2012 Daniel Baumann <daniel.baumann@progress-technologies.net>
 License: GPL-3+
 
 License: Apache-2.0
