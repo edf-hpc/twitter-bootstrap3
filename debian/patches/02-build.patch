@@ -1,18 +1,21 @@
 Author: Daniel Baumann <daniel.baumann@progress-linux.org>
 Description: Avoid removing files after build.
 
-diff -Naurp twitter-bootstrap.orig/Makefile twitter-bootstrap/Makefile
---- twitter-bootstrap.orig/Makefile	2012-02-10 21:28:22.127338647 +0100
-+++ twitter-bootstrap/Makefile	2012-02-10 21:28:11.079284627 +0100
-@@ -11,7 +11,6 @@ WATCHR ?= `which watchr`
+diff -Naurp twitter-bootstrap.orig//Makefile twitter-bootstrap/Makefile
+--- twitter-bootstrap.orig//Makefile	2012-03-19 13:22:57.443426162 +0100
++++ twitter-bootstrap/Makefile	2012-03-20 12:11:29.398597459 +0100
+@@ -10,9 +10,8 @@ WATCHR ?= `which watchr`
+ #
  
  docs: bootstrap
+-	rm docs/assets/bootstrap.zip
++	rm -f docs/assets/bootstrap.zip
  	zip -r docs/assets/bootstrap.zip bootstrap
 -	rm -r bootstrap
  	lessc ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
  	lessc ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
  	node docs/build
-@@ -24,6 +23,7 @@ docs: bootstrap
+@@ -26,6 +25,7 @@ docs: bootstrap
  #
  
  bootstrap:
