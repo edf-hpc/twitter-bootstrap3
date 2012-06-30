@@ -42,4 +42,10 @@ override_dh_auto_install:
 	cp docs/assets/js/README.md debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs/README.js
 
 override_dh_builddeb:
-	dh_builddeb -- -Zgzip -z9
+	dh_builddeb -- -Zxz -z9
+
+override_dh_install:
+	dh_install --fail-missing
+
+	# Removing usless files
+	rm -f debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs/html/build/node_modules/hogan.js/LICENSE

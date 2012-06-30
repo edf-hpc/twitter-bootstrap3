@@ -1,3 +1,14 @@
+twitter-bootstrap (2.0.2+dfsg-2) unstable; urgency=low
+
+  * Switching to xz compression.
+  * Updating GPL boilerplate in copyright file.
+  * Sorting fields in proper order in copyright file.
+  * Removing useless additional license file.
+  * Adding missing continuation line in copyright file.
+  * Removing obsoleted copyright symbols in copyright file.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 30 Jun 2012 15:48:58 +0200
+
 twitter-bootstrap (2.0.2+dfsg-1) unstable; urgency=low
 
   * Merging upstream version 2.0.2+dfsg.

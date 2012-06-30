@@ -16,14 +16,26 @@ Copyright: 2010-2012 Jan Kovarik <glyphicons@gmail.com>
 License: CC-BY-3.0
 
 Files: js/tests/vendor/qunit.*
-Copyright:
- (C) John Resig
- (C) Jörn Zaefferer
+Copyright: John Resig
+           Jörn Zaefferer
 License: MIT | GPL-2
 
 Files: debian/*
 Copyright: 2011-2012 Daniel Baumann <daniel.baumann@progress-technologies.net>
 License: GPL-3+
+
+Files: debian/local/html5shiv/*
+Copyright: 2011 Alexander Farkas <info@corrupt-system.de>
+           2011 Jonathan Neal <jonathantneal@hotmail.com>
+License: MIT | GPL-2
+
+Files: debian/local/prettify/*
+Copyright: 2006-2011 Google Inc.
+           2011 Martin S.
+           2009 Onno Hommes
+           2011 Patrick Wied
+           2011 Zimin A.V.
+License: Apache-2.0
 
 License: Apache-2.0
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -145,7 +157,7 @@ License: CC-BY-3.0
       respect to the Work, or who has received express
       permission from the Licensor to exercise rights under
       this License despite a previous violation.
-
+ .
    h) "Publicly Perform" means to perform
       public recitations of the Work and to communicate to the
       public those public recitations, by any means or process,
@@ -323,7 +335,7 @@ License: CC-BY-3.0
  .
  5.   Representations, Warranties and
       Disclaimer
-
+ .
       UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN
       WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO
       REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE
@@ -419,21 +431,6 @@ License: CC-BY-3.0
       to restrict the license of any rights under applicable
       law.
 
-Files: debian/local/html5shiv/*
-Copyright:
- (C) 2011 Alexander Farkas <info@corrupt-system.de>
- (C) 2011 Jonathan Neal <jonathantneal@hotmail.com>
-License: MIT | GPL-2
-
-Files: debian/local/prettify/*
-Copyright:
- (C) 2006-2011 Google Inc.
- (C) 2011 Martin S.
- (C) 2009 Onno Hommes
- (C) 2011 Patrick Wied
- (C) 2011 Zimin A.V.
-License: Apache-2.0
-
 License: MIT
  Permission is hereby granted, free of charge, to any person obtaining
  a copy of this software and associated documentation files (the
@@ -455,10 +452,9 @@ License: MIT
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 License: GPL-2
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License
- as published by the Free Software Foundation; version 2
- of the License.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 2 of the License.
  .
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -466,8 +462,7 @@ License: GPL-2
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program; if not, write to the Free Software
- Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
  .
  The complete text of the GNU General Public License
  can be found in /usr/share/common-licenses/GPL-2 file.
