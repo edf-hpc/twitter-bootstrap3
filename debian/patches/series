@@ -1,2 +1,3 @@
 01-dfsg.patch
 02-build.patch
+use-nodejs-command.patch

@@ -1,3 +1,12 @@
+twitter-bootstrap (2.0.2+dfsg-3) unstable; urgency=low
+
+  * QA upload
+  * The package has been orphaned. Set maintainer to Debian QA Group.
+  * Use nodejs command instead of the obsolete node command to build the
+    documentation. (Closes: #707522)
+
+ -- Markus Koschany <apo@gambaru.de>  Sat, 08 Jun 2013 23:09:56 +0200
+
 twitter-bootstrap (2.0.2+dfsg-2) unstable; urgency=low
 
   * Switching to xz compression.
