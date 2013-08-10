@@ -1,9 +1,3 @@
-twitter-bootstrap (2.0.2+dfsg-4~bpo70+1) wheezy-backports; urgency=low
-
-  * Upload to wheezy-backports.
-
- -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Dec 2013 12:22:16 +0100
-
 twitter-bootstrap (2.0.2+dfsg-4) unstable; urgency=low
 
   * QA upload.
