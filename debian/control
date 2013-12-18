@@ -2,14 +2,17 @@ Source: twitter-bootstrap
 Section: web
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends:
- debhelper (>= 9), node-less (>= 1.3), node-uglify, yui-compressor,
- zip
-Standards-Version: 3.9.3
+Uploaders:
+ Mike Gabriel <sunweaver@debian.org>,
+Build-Depends: debhelper (>= 9),
+               node-less (>= 1.3),
+               node-uglify,
+               yui-compressor,
+               zip
+Standards-Version: 3.9.4
 Homepage: http://twitter.github.com/bootstrap/
 
 Package: libjs-twitter-bootstrap
-Section: web
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: libjs-jquery, libjs-jquery-tablesorter

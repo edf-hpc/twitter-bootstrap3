@@ -1,0 +1,4 @@
+version=3
+opts=uversionmangle=s/-(rc\d*)$/~$1/,dversionmangle=s/\+dfsg\d*$// \
+https://github.com/twbs/bootstrap/releases \
+.*[^n]/(?:|v|r|REL_|rel-|twitter-bootstrap(?:_|-))(\d\S*)\.(?:tar\.xz|txz|tar\.bz2|tbz2|tar\.gz|tgz)

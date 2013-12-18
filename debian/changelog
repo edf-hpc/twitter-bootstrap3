@@ -1,3 +1,23 @@
+twitter-bootstrap (2.0.2+dfsg-4~bpo70+1) wheezy-backports; urgency=low
+
+  * Upload to wheezy-backports.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Dec 2013 12:22:16 +0100
+
+twitter-bootstrap (2.0.2+dfsg-4) unstable; urgency=low
+
+  * QA upload.
+  * debian/patches/build-with-node-1.4.2.patch: Add patch from upstream
+    git to build with node 1.4.2 (Closes: #718072)
+  * Updating to Standards version 3.9.4
+  * Update copyright file to clarify license
+  * Include a watchfile
+  * Don't duplicate "Section"-field in libjs-twitter-bootstrap
+  * Don't use obsolete Apache2 conf.d directory
+  * Add a doc-base file for the documentation package
+
+ -- Andreas Moog <amoog@ubuntu.com>  Sat, 10 Aug 2013 18:57:51 +0000
+
 twitter-bootstrap (2.0.2+dfsg-3) unstable; urgency=low
 
   * QA upload

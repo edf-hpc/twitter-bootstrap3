@@ -1,0 +1,49 @@
+Description: Move to new selector interpolation, supported from node 1.3.1 
+ onwards, this fixes a build error with node 1.4.2
+Author: Luke Page <luke.a.page@gmail.com>
+Bug-Debian: http://bugs.debian.org/718072
+Origin: upstream, https://github.com/twbs/bootstrap/commit/042bb9b51510573a9a1db6bc66cb16311d0d580b.patch
+Last-Update: 2013-08-10
+
+--- twitter-bootstrap-2.0.2+dfsg.orig/less/mixins.less
++++ twitter-bootstrap-2.0.2+dfsg/less/mixins.less
+@@ -519,13 +519,13 @@
+   .core (@gridColumnWidth, @gridGutterWidth) {
+ 
+     .spanX (@index) when (@index > 0) {
+-      (~".span@{index}") { .span(@index); }
++      .span@{index} { .span(@index); }
+       .spanX(@index - 1);
+     }
+     .spanX (0) {}
+ 
+     .offsetX (@index) when (@index > 0) {
+-      (~".offset@{index}") { .offset(@index); }
++      .offset@{index} { .offset(@index); }
+       .offsetX(@index - 1);
+     }
+     .offsetX (0) {}
+@@ -562,7 +562,7 @@
+   .fluid (@fluidGridColumnWidth, @fluidGridGutterWidth) {
+ 
+     .spanX (@index) when (@index > 0) {
+-      (~"> .span@{index}") { .span(@index); }
++      .span@{index} { .span(@index); }
+       .spanX(@index - 1);
+     }
+     .spanX (0) {}
+@@ -591,7 +591,7 @@
+   .input(@gridColumnWidth, @gridGutterWidth) {
+ 
+     .spanX (@index) when (@index > 0) {
+-      (~"input.span@{index}, textarea.span@{index}, .uneditable-input.span@{index}") { .span(@index); }
++      input.span@{index}, textarea.span@{index}, .uneditable-input.span@{index} { .span(@index); }
+       .spanX(@index - 1);
+     }
+     .spanX (0) {}
+@@ -610,5 +610,4 @@
+     .spanX (@gridColumns);
+ 
+   }
+-
+ }

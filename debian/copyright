@@ -18,7 +18,7 @@ License: CC-BY-3.0
 Files: js/tests/vendor/qunit.*
 Copyright: John Resig
            Jörn Zaefferer
-License: MIT | GPL-2
+License: MIT or GPL-2
 
 Files: debian/*
 Copyright: 2011-2012 Daniel Baumann <daniel.baumann@progress-technologies.net>
@@ -27,7 +27,7 @@ License: GPL-3+
 Files: debian/local/html5shiv/*
 Copyright: 2011 Alexander Farkas <info@corrupt-system.de>
            2011 Jonathan Neal <jonathantneal@hotmail.com>
-License: MIT | GPL-2
+License: MIT or GPL-2
 
 Files: debian/local/prettify/*
 Copyright: 2006-2011 Google Inc.
