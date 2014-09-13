@@ -1,6 +1,0 @@
-
-bootstrap/*			/usr/share/twitter-bootstrap/files
-debian/local/*.conf		/usr/share/twitter-bootstrap
-debian/local/*/			/usr/share/twitter-bootstrap/files
-docs/assets/img/icon-*.png	/usr/share/twitter-bootstrap/files/img
-js/bootstrap*.js		/usr/share/twitter-bootstrap/files/js

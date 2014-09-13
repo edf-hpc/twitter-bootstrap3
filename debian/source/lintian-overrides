@@ -1,0 +1,5 @@
+# Noisy Lintian is buggy
+source-contains-prebuilt-javascript-object dist/js/bootstrap.min.js
+source-contains-prebuilt-javascript-object docs/dist/js/bootstrap.min.js
+source-is-missing docs/dist/js/bootstrap.min.js
+composer-package-without-pkg-php-tools-builddep

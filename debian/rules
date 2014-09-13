@@ -1,51 +1,59 @@
 #!/usr/bin/make -f
 
-SHELL := sh -e
+UPSTREAM := $(shell head -1 debian/changelog | sed 's/.*(//;s/+dfsg-.?*).*//')
 
 %:
-	dh ${@}
-
-dfsg:
-	rm -f docs/assets/boostrap.zip
-	rm -f docs/assets/img/bird.png
-	rm -f docs/assets/img/browsers.png
-	rm -f docs/assets/img/github-16px.png
-	rm -f docs/assets/img/icon-github.png
-	rm -f docs/assets/img/icon-twitter.png
-	rm -f docs/assets/js/jquery.js
-	rm -rf docs/assets/js/google-code-prettify
-	rm -f js/tests/vendor/jquery.js
-
-override_dh_auto_clean:
-	dh_auto_clean
-
-	rm -f debian/local/*/*.min.js
+	dh $@ -XLICENSE
 
 override_dh_auto_build:
 	dh_auto_build
+	# Mimic concat from Gruntfile
+	echo '/*!' \
+		> dist/js/bootstrap.js
+	echo ' * Bootstrap v$(UPSTREAM) (http://getbootstrap.com)' \
+		>> dist/js/bootstrap.js
+	echo ' * Copyright 2011-$(shell date +%Y) Twitter, Inc.' \
+		>> dist/js/bootstrap.js
+	echo ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)' \
+		>> dist/js/bootstrap.js
+	echo ' */' \
+		>> dist/js/bootstrap.js
+	echo '' >> dist/js/bootstrap.js
+	echo "if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }" \
+		>> dist/js/bootstrap.js
+	for i in \
+		js/transition.js \
+		js/alert.js \
+		js/button.js \
+		js/carousel.js \
+		js/collapse.js \
+		js/dropdown.js \
+		js/modal.js \
+		js/tooltip.js \
+		js/popover.js \
+		js/scrollspy.js \
+		js/tab.js \
+		js/affix.js \
+		; do \
+			echo '' >> dist/js/bootstrap.js && \
+			cat $$i >> dist/js/bootstrap.js \
+		; done
+	# Mimic uglify from Gruntfile
+	uglifyjs -o dist/js/bootstrap.min.js dist/js/bootstrap.js
+	# Mimic copy from Gruntfile
+	cp fonts/* dist/fonts
+	# Mimic less from Gruntfile
+	lessc --strict-math=on \
+		--source-map-url=bootstrap.css.map \
+		--source-map=dist/css/bootstrap.css.map \
+		less/bootstrap.less dist/css/bootstrap.css
+	lessc --strict-math=on \
+		--source-map-url=bootstrap-theme.css.map \
+		--source-map=dist/css/bootstrap-theme.css.map \
+		less/theme.less dist/css/bootstrap-theme.css
+	# Mimic cssmin from Gruntfile
+	cssmin < dist/css/bootstrap.css > dist/css/bootstrap.min.css
+	cssmin < dist/css/bootstrap-theme.css > dist/css/bootstrap-theme.min.css
 
-	for _FILE in js/*.js debian/local/*/*.js; \
-	do \
-		yui-compressor --type js -o $$(dirname $${_FILE})/$$(basename $${_FILE} .js).min.js $${_FILE}; \
-	done
-
-	for _FILE in debian/local/*/*.css; \
-	do \
-		yui-compressor --type css -o $$(dirname $${_FILE})/$$(basename $${_FILE} .css).min.css $${_FILE}; \
-	done
-
-override_dh_auto_install:
-	dh_auto_install
-
-	mkdir -p debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs
-	cp README.md debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs/README.css
-	cp docs/assets/js/README.md debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs/README.js
-
-override_dh_builddeb:
-	dh_builddeb -- -Zxz -z9
-
-override_dh_install:
-	dh_install --fail-missing
-
-	# Removing usless files
-	rm -f debian/libjs-twitter-bootstrap-docs/usr/share/doc/libjs-twitter-bootstrap-docs/html/build/node_modules/hogan.js/LICENSE
+get-orig-source:
+	uscan --verbose --force --rename

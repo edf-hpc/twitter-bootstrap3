@@ -1,2 +1,0 @@
-libjs-twitter-bootstrap-docs:
-  * fix references to account for removed components (e.g. jquery).
