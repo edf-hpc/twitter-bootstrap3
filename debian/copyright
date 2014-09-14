@@ -1,7 +1,11 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: twitter-bootstrap
+Upstream-Name: Bootstrap
 Upstream-Contact: https://github.com/twitter/bootstrap/issues
-Source: https://github.com/twitter/bootstrap/tags
+Source: https://github.com/twitter/bootstrap/
+Files-Excluded: docs/assets/flash/ZeroClipboard.swf
+                docs/assets/js/*.min.js
+                docs/assets/js/_vendor/*.min.js
+                js/tests/vendor/jquery.min.js
 
 Files: *
 Copyright: 2011-2012 Twitter, Inc.
