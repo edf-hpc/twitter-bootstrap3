@@ -1,8 +1,10 @@
-twitter-bootstrap3 (3.2.0+dfsg-1) UNRELEASED; urgency=medium
+twitter-bootstrap3 (3.2.0+dfsg-1) unstable; urgency=medium
 
-  * 
+  * Restart packaging for twitter-bootstrap3 (Closes: #722935)
+  * Do not install documentation
+  * Provide less files, as suggested in #731750
 
- -- David Prévot <taffit@debian.org>  Sun, 14 Sep 2014 14:41:26 -0400
+ -- David Prévot <taffit@debian.org>  Sun, 14 Sep 2014 15:14:28 -0400
 
 twitter-bootstrap (2.0.2+dfsg-4) unstable; urgency=low
 
