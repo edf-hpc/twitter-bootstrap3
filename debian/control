@@ -12,21 +12,9 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/twitter-bootstra
 Package: libjs-bootstrap
 Architecture: all
 Depends: ${misc:Depends}
-Suggests: libjs-bootstrap-docs
 Description: HTML, CSS and JS framework
  Bootstrap is a popular HTML, CSS, and JS framework for developing
  responsive, mobile first projects on the web.
  .
  It includes base CSS and HTML for typography, forms, buttons, tables,
  grids, navigation, and more.
-
-Package: libjs-bootstrap-docs
-Section: doc
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: libjs-jquery
-Description: HTML, CSS and JS framework -- documentation
- Bootstrap is a popular HTML, CSS, and JS framework for developing
- responsive, mobile first projects on the web.
- .
- This package contains the documentation.
