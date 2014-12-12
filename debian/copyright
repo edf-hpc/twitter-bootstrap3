@@ -4,7 +4,7 @@ Upstream-Contact: https://github.com/twitter/bootstrap/issues
 Source: https://github.com/twitter/bootstrap/
 Files-Excluded: docs/assets/flash/ZeroClipboard.swf
                 docs/assets/js/*.min.js
-                docs/assets/js/_vendor/*.min.js
+                docs/assets/js/vendor/holder.js
                 js/tests/vendor/jquery.min.js
 
 Files: *
