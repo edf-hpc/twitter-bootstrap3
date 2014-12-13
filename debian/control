@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: David Prévot <taffit@debian.org>
 Build-Depends: cssmin, debhelper (>= 9), node-less, node-uglify
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://getbootstrap.com/
 Vcs-Git: git://anonscm.debian.org/pkg-javascript/twitter-bootstrap.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/twitter-bootstrap.git
