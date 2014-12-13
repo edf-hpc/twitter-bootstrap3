@@ -1,3 +1,19 @@
+twitter-bootstrap3 (3.3.1+dfsg-1) experimental; urgency=medium
+
+  * Upload to experimental to respect the freeze
+
+  [ Mark Otto ]
+  * bump version to v3.3.1
+
+  [ David Prévot ]
+  * Use repacksuffix feature of uscan
+  * Update copyright
+  * Add upstream changelog
+  * Bump standards version to 3.9.6
+  * Update rules
+
+ -- David Prévot <taffit@debian.org>  Fri, 12 Dec 2014 23:01:18 -0400
+
 twitter-bootstrap3 (3.2.0+dfsg-1) unstable; urgency=medium
 
   * Restart packaging for twitter-bootstrap3 (Closes: #722935)
