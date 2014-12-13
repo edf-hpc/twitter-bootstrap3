@@ -19,7 +19,24 @@ override_dh_auto_build:
 	echo ' */' \
 		>> dist/js/bootstrap.js
 	echo '' >> dist/js/bootstrap.js
-	echo "if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }" \
+	echo "if (typeof jQuery === 'undefined') {" \
+		>> dist/js/bootstrap.js
+	echo "  throw new Error('Bootstrap\'s JavaScript requires jQuery')" \
+		>> dist/js/bootstrap.js
+	echo "}" \
+		>> dist/js/bootstrap.js
+	echo '' >> dist/js/bootstrap.js
+	echo "+function ($$) {" \
+		>> dist/js/bootstrap.js
+	echo "  var version = $$.fn.jquery.split(' ')[0].split('.')" \
+		>> dist/js/bootstrap.js
+	echo "  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {" \
+		>> dist/js/bootstrap.js
+	echo "    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')" \
+		>> dist/js/bootstrap.js
+	echo "  }" \
+		>> dist/js/bootstrap.js
+	echo "}(jQuery);" \
 		>> dist/js/bootstrap.js
 	for i in \
 		js/transition.js \
