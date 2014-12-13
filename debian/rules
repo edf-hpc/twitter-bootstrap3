@@ -55,5 +55,8 @@ override_dh_auto_build:
 	cssmin < dist/css/bootstrap.css > dist/css/bootstrap.min.css
 	cssmin < dist/css/bootstrap-theme.css > dist/css/bootstrap-theme.min.css
 
+override_dh_installchangelogs:
+	dh_installchangelogs $(CURDIR)/debian/upstream/changelog
+
 get-orig-source:
 	uscan --verbose --force --rename
