@@ -8,7 +8,7 @@ Files-Excluded: docs/assets/flash/ZeroClipboard.swf
                 js/tests/vendor/jquery.min.js
 
 Files: *
-Copyright: 2011-2014, Twitter, Inc.
+Copyright: 2011-2015, Twitter, Inc.
            2014, jQuery Foundation and other contributors
            2014, "Cowboy" Ben Alman, contributors
            HTML5 Boilerplate
@@ -17,7 +17,7 @@ Copyright: 2011-2014, Twitter, Inc.
 License: Expat
 
 Files: docs/*
-Copyright: 2011-2014, Twitter, Inc.
+Copyright: 2011-2015, Twitter, Inc.
 License: CC-BY-3.0
 
 Files: docs/assets/js/src/customizer.js
