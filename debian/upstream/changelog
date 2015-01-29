@@ -1,3 +1,113 @@
+v3.3.2 - Jan 19, 2015
+
+CSS
+
+    #14937: Fix carousel partially not using vendor-prefix mixins.
+    #14990, #15391: Full width form control elements inside media/flag object
+    #15074: Fix the nesting problem with form control size variants.
+    #15124: Restore missing .media-object that was removed in #14801.
+    #15140: Restore .media and .media-body styles that were removed in #14801.
+    #15142: Add position: relative; to .dropup for proper menu placement.
+    #15148, #15307: Use same value for margins on default .dropdown-menu as .dropup .dropdown-menus.
+    #15244: Vertically center .icon-prev and .icon-next in carousel controls with line-height: 1.
+    #15278: Fix border-radius on nested button groups with only one child.
+    #15413, #15422: Fixes .input-group-sm and .input-group-lg for temporal date inputs.
+    #15428: Update browser bug references in Less comments.
+    #15482: Add .disabled class to the .btn-styles mixin in the theme.
+    #15497: Increase decimals on @line-height-large from 1.33 to 1.3333333 to fix button sizing in Chrome for Windows 8.1.
+    #15536, #15559: Apply form group size variations to .form-control-static.
+    #15551: Fix .table-striped to work with tooltips on rows by using nth-of-type instead of nth-child.
+    #15565, #15567: Use @link-hover-decoration for .btn-link to match default a:hover styles.
+    #15594: Reset the color on <small> and .small elements within .panel-titles.
+
+Icon font
+
+    bcb90ef / #15213: Update to Glyphicons v1.9
+    #15464: Exclude 2 problematic icons that were added in Glyphicons v1.9
+
+JS
+Collapse
+
+    #15131: Use $.fn.children instead of > in selector.
+    #15241: Add basic collapse plugin example for toggling another element.
+
+Carousel
+
+    #15152: Make wrap: false work again (fixes regression)
+
+Affix
+
+    #15154: Fix bug where .affix-top was not getting applied due to padding
+
+Tooltip/Popover
+
+    #15425: Belatedly add regression test for #14244.
+    #15466: Revert #14189 (and thus remove the recently-added "multiple delegated tooltips on a single element" feature) since it caused some nasty regressions.
+
+Misc
+
+    #15535: Use strict mode in jQuery version check function
+
+Docs
+
+    #15094: Add Options, Methods, and Events subsections for each plugin to the JavaScript docs nav sidebar.
+    #15120, #15137: Fix .form-inline example in CSS docs.
+    #15125: Clean up ARIA role usage.
+    #15129: Specify img alternative text.
+    #15133: Fix up use of scope and th/td elements inside tables.
+    #15194: Improve recommended media component markup.
+    #15238, #15306: Add more information about CSS source maps.
+    #15277: Remove dummy href="#" from dismiss-on-next-click popover example
+    #15334: Fix/merge advice on low percentage progress bars.
+    #15337: Add @patrickhlauke to Core Team list on the About page.
+    #15340: Document that the border-radius of <select>s can't be styled in all browsers
+    #15363: Make skip link look less "bare bones" and expand related accessibility advice.
+    #15426: Remove holder.js references from syntax-highlighted example HTML.
+    #15465: Document that calling tooltip/popover show/hide method qualifies as manual triggering.
+    #15470: Document the VERSION property of the jQuery plugins.
+    #15472: Document that responsive tables use overflow-y: hidden.
+    #15473: Document that Autoprefixer is required.
+    #15498: Add examples of using feedback icons with .input-group.
+    #15524: Add pointer to Masonry (& similar) in the Thumbnail docs.
+    #15560: Document that .form-inline & .form-horizontal work fine on non-<form>s too,
+    #15569: Document usage of npm package.
+    #15581: Add example of using .form-inline with visible <label>s.
+
+Examples
+
+    #15096: Fix navbar forms in the non-responsive example.
+
+Browser bugs
+
+    0445f23: The Chrome bug related to #14972 has been fixed on Linux. On Windows, it's still broken due to a different Chrome bug currently slated for Chrome 41.
+    #15407: Add Wall of Browser Bugs entry for #15205.
+    #15415: Add Wall of Browser Bugs entry for #11266 / #13098.
+    #15576: Add Wall of Browser Bugs entry for #15298.
+
+Accessibility
+
+    #15320: Expanded advice on labels for inline forms, use of title and explanation for <abbr>, replaced use of sr-only text with aria-label for close buttons, wrapped sidebar navigation in a <nav>.
+    #15327: Expanded advice for optional icons with hidden labels, replaced use of sr-only text with aria-label for pagination "previous"/"next" links, callout and examples for various labelling methods for input groups, made main button in segmented buttons in input groups keyboard-focusable, split out/clarified multiple attribute on <select> elements.
+
+Customizer
+
+    #15309: Catch and properly report compile errors that Less.js's toCSS() can throw.
+    #15330: Tie help block to input with aria-describedby.
+    #15395: Add warning message about intermittent Firefox-related bug.
+
+Build tools / Packaging
+
+    #15149: Upgraded OS X JS browser tests to OS X Yosemite
+    #15150: Upgraded iOS JS browser tests to iOS 8.1
+    #15269: Make HTML validator Grunt task ignore spurious errors about <li role="separator">...</li>
+    #15355, #15356, #15357, #15451, #15452, #15453, #15454, #15455, #15462: Update to latest versions of various libraries & Grunt tasks.
+
+Bots
+
+    #15176, #15177, #15187: Launched @twbs-savage bot to automatically run Sauce cross-browser tests on JavaScript pull requests. GitHub repo: https://github.com/twbs/savage
+    Launched @twbs-grunt bot to automatically keep our /dist/ files up-to-date. GitHub repo: https://github.com/twbs/gruntworker
+
+
 v3.3.1 - Nov 12, 2014
 
 Follow up patch release for bug fixes and documentation improvements.
