@@ -1,3 +1,89 @@
+v3.3.4 - Mar 16, 2015
+
+CSS
+
+    #15561, #15628: Properly resize .badges inside .btn-group-xs
+    #15620: Add .glyphicon-* aliases for other ISO 4217-ish currency codes:
+        .glyphicon-btc and .glyphicon-xbt for .glyphicon-bitcoin
+        .glyphicon-jpy for .glyphicon-yen
+        .glyphicon-rub for .glyphicon-ruble
+    #15656: Improve positioning of inline checkboxes and radio buttons by setting position: relative
+    #15682, #15697: Ensure .caret is the same size in Firefox
+    #15699: Ensure .form-control-static doesn't change height when it's empty
+    #15719, #15728: Add a variable for .form-group's margin-bottom
+    #15726: Remove unnecessary nesting of .embed-responsive-* classes
+    #15755: Removed unnecessary visibility: hidden !important from .hidden class per upstream H5BP change
+    #15825: Use a utility mixing for .initialism text transformation
+    #15947, #15974: iOS fix for role="button" elements
+    #16021: Remove visibility properties where they are redundant to existing display properties
+
+JS
+
+    #15378: Modal: Work around IE scrollbars not taking up page width
+    #15496: Make $(document).tooltip({...}) without the selector option throw an error
+    #15520: Dropdown: Properly ignore .disabled elements when using keyboard navigation
+    #15557: Tooltip: Avoid creating an unnecessary tooltip when Tooltip#hide is called
+    #15593: Fix Scrollspy's handling of multiple target elements with offsets of zero
+    #15630: Fix erroneous tautological conditional in Tab plugin
+    #15681: Rename Tooltip.replaceArrow()'s isHorizontal parameter to isVertical for accuracy
+    #15693: Remove duplicate implementation of tip() method in popover.js
+    #15930: Modal: Apply any preexisting inline body padding again after closing
+    #15941: Update the .collapsed class and aria-expanded attribute of all of a Collapse's trigger elements when showing/hiding the Collapse
+    #15881: Modal: Fix backdrop not readjusting when height changes
+    #15988: $(...).tooltip('hide') on an uninitialized tooltip/popover no longer unnecessarily initializes it
+    #16011: $(...).collapse('hide') on a hidden uninitialized collapsible no longer shows it
+    #16043: Use half-closed interval for ScrollSpy bounds condition to avoid selecting wrong nav element when user scrolls upwards
+
+Docs
+
+    #15491: Add AnchorJS for docs anchors (hover over headings for a permalink to that section)
+    #15621: Document sticky :hover on mobile browsers
+    #15648: Improve image layout in the Carousel example and document image alignment via .center-block
+    #15662: Mention dropup variation in dropdown docs
+    #15683, #15703: Clarify usage and effects of readonly and disabled inputs
+    #15710: License FAQ clarification
+    #15714: Skip link workarounds for Chrome and IE
+    #15725: Add example of how to use the grid system within a modal
+    #15739: Clarify target of modal events
+    #15740: Clarify target of carousel events
+    #15742: Document how destroy works for delegated tooltips/popovers
+    #15882, #15900: Use an ID as the example for Scrollspy
+    #15884, #15885, #15886, #15887, #15888, #15889, #15890, #15891, #15914: Accessibility changes to improve heading hierarchy within pages
+    #15898: Change CC link in footer to HTTPS
+    #15903: Add rel="license" and update the target of footer license links
+    #15906, #15916: Add source code documentation of justified navbar for the single-line text requirement
+    #15910: Document how to properly handle modals with dynamic content height
+    #15915: Javascript docs: Accessibility and cosmetic changes to headings.
+    #15929: Encourage use of icons with form validation states for colorblind users
+    #15946: Accessibility and headings hierarchy for the "Getting started" page
+    #15948: Accessibility and headings hierarchy for the CSS page.
+    #15999: Document JS test suite basics
+    #16004: Add link to Vietnamese docs translation
+    #16042: Increment quick start options in README to five
+    #16058: Document that striped progress bars aren't striped on IE9
+
+Examples
+
+    #15291: Prevent collapsed navbar in non-responsive example
+    #15911: Update the header in the jumbotron narrow example for a more durable layout
+
+Browser bugs
+
+    #15846: Add Wall of Browser Bugs entries for #15832
+    #16036: Add Wall of Browser Bugs entry for #16022
+
+Packages
+
+    #15651: Add WOFF2 font file to bower.json's main field
+    #15716: Integrate with Meteor's package manager
+    #15809: Specify the files to install via npm
+
+Grunt/Travis
+
+    #15611: Use local HTML validator to improve performance
+    #15778: Upgrade Travis to Node.js v0.12
+
+
 v3.3.2 - Jan 19, 2015
 
 CSS
