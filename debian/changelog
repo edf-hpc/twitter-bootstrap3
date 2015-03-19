@@ -1,6 +1,11 @@
+twitter-bootstrap3 (3.3.4+dfsg-1) experimental; urgency=medium
+
+  * Update copyright
+
+ -- David Prévot <taffit@debian.org>  Thu, 19 Mar 2015 16:56:48 -0400
+
 twitter-bootstrap3 (3.3.2+dfsg-1) experimental; urgency=medium
 
-  [ David Prévot ]
   * Update copyright
 
  -- David Prévot <taffit@debian.org>  Thu, 29 Jan 2015 19:22:15 -0400
