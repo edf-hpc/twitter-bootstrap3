@@ -24,9 +24,9 @@ Files: docs/assets/js/src/customizer.js
 Copyright: 2011-2014, Twitter, Inc.
 License: CC-BY-3.0 and Unlicense
 
-Files: docs/assets/js/vendor/Blob.js
-       docs/assets/js/vendor/FileSaver.js
-Copyright: 2014, Eli Grey <http://eligrey.com>
+Files: docs/assets/js/vendor/*
+Copyright: 2014, Bryan Braun <https://github.com/bryanbraun/anchorjs>
+           2014, Eli Grey <http://eligrey.com>
 License: Expat
 
 Files: docs/assets/js/vendor/autoprefixer.js
