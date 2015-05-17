@@ -1,3 +1,9 @@
+twitter-bootstrap3 (3.3.4+dfsg-2) unstable; urgency=medium
+
+  * Upload to unstable since Jessie has been released
+
+ -- David Prévot <taffit@debian.org>  Sun, 17 May 2015 09:06:25 -0400
+
 twitter-bootstrap3 (3.3.4+dfsg-1) experimental; urgency=medium
 
   * Update copyright
