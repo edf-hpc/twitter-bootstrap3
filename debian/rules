@@ -51,9 +51,6 @@ override_dh_auto_build:
 		--source-map-url=bootstrap-theme.css.map \
 		--source-map=dist/css/bootstrap-theme.css.map \
 		less/theme.less dist/css/bootstrap-theme.css
-	# Mimic cssmin from Gruntfile
-	cssmin < dist/css/bootstrap.css > dist/css/bootstrap.min.css
-	cssmin < dist/css/bootstrap-theme.css > dist/css/bootstrap-theme.min.css
 
 get-orig-source:
 	uscan --verbose --force --rename
