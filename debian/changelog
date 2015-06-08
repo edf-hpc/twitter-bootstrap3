@@ -1,3 +1,15 @@
+twitter-bootstrap3 (3.2.0+dfsg-1+c7+1) calibre7; urgency=low
+
+  * Backport to Calibre7
+  * Remove d/clean to keep dist/ dir
+  * Back to dh 8
+  * Remove Build-Dep on cssmin
+  * Remove Build-Dep on node-uglify
+  * Remove Build-Dep on node-less
+  * Remove concat of JS file
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Mon, 08 Jun 2015 11:55:45 +0200
+
 twitter-bootstrap3 (3.2.0+dfsg-1) unstable; urgency=medium
 
   * Restart packaging for twitter-bootstrap3 (Closes: #722935)
