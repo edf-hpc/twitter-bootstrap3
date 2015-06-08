@@ -7,37 +7,6 @@ UPSTREAM := $(shell head -1 debian/changelog | sed 's/.*(//;s/+dfsg-.?*).*//')
 
 override_dh_auto_build:
 	dh_auto_build
-	# Mimic concat from Gruntfile
-	echo '/*!' \
-		> dist/js/bootstrap.js
-	echo ' * Bootstrap v$(UPSTREAM) (http://getbootstrap.com)' \
-		>> dist/js/bootstrap.js
-	echo ' * Copyright 2011-$(shell date +%Y) Twitter, Inc.' \
-		>> dist/js/bootstrap.js
-	echo ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)' \
-		>> dist/js/bootstrap.js
-	echo ' */' \
-		>> dist/js/bootstrap.js
-	echo '' >> dist/js/bootstrap.js
-	echo "if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }" \
-		>> dist/js/bootstrap.js
-	for i in \
-		js/transition.js \
-		js/alert.js \
-		js/button.js \
-		js/carousel.js \
-		js/collapse.js \
-		js/dropdown.js \
-		js/modal.js \
-		js/tooltip.js \
-		js/popover.js \
-		js/scrollspy.js \
-		js/tab.js \
-		js/affix.js \
-		; do \
-			echo '' >> dist/js/bootstrap.js && \
-			cat $$i >> dist/js/bootstrap.js \
-		; done
 	# Mimic copy from Gruntfile
 	cp fonts/* dist/fonts
 
