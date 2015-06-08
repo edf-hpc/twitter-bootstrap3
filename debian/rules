@@ -38,8 +38,6 @@ override_dh_auto_build:
 			echo '' >> dist/js/bootstrap.js && \
 			cat $$i >> dist/js/bootstrap.js \
 		; done
-	# Mimic uglify from Gruntfile
-	uglifyjs -o dist/js/bootstrap.min.js dist/js/bootstrap.js
 	# Mimic copy from Gruntfile
 	cp fonts/* dist/fonts
 	# Mimic less from Gruntfile
