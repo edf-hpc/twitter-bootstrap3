@@ -40,15 +40,6 @@ override_dh_auto_build:
 		; done
 	# Mimic copy from Gruntfile
 	cp fonts/* dist/fonts
-	# Mimic less from Gruntfile
-	lessc --strict-math=on \
-		--source-map-url=bootstrap.css.map \
-		--source-map=dist/css/bootstrap.css.map \
-		less/bootstrap.less dist/css/bootstrap.css
-	lessc --strict-math=on \
-		--source-map-url=bootstrap-theme.css.map \
-		--source-map=dist/css/bootstrap-theme.css.map \
-		less/theme.less dist/css/bootstrap-theme.css
 
 get-orig-source:
 	uscan --verbose --force --rename
