@@ -1,3 +1,9 @@
+twitter-bootstrap3 (3.2.0+dfsg-1+c7+2) calibre7; urgency=medium
+
+  * Add dependency on jquery >= 1.7
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Wed, 10 Jun 2015 09:38:38 +0200
+
 twitter-bootstrap3 (3.2.0+dfsg-1+c7+1) calibre7; urgency=low
 
   * Backport to Calibre7
